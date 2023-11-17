@@ -1,0 +1,104 @@
+:root 
+{
+    --red: #E63946;
+    --greenish: #F1FAEE;
+    --green: #A8DADC;
+    --blueish: #457B9D;
+    --blue: #1D3557;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--red);
+}
+
+main
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container
+{
+    width: 80%;
+    height: 80%;
+    background-color: var(--greenish);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 2px 2px 20px;
+}
+
+.title-container
+{
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#flag
+{
+    font-size: 5rem;
+}
+
+.overlay 
+{
+    position: absolute;
+    background: #fff;
+    pointer-events: none;
+}
+
+
+#tooltip 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    font: 12px;
+    background: lightsteelblue;
+    box-shadow: 1px 1px 10px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+#vis-container
+{
+    height: 100%;
+}
+  
+#y-axis path 
+{
+    stroke: black;
+    stroke-width: 1;
+    fill: none;
+}
+
+#x-axis path 
+{
+    stroke: black;
+    stroke-width: 1;
+    fill: none;
+}
+
+.info 
+{
+    font-size: 0.8em;
+}
